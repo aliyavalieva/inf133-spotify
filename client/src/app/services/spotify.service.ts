@@ -24,9 +24,7 @@ export class SpotifyService {
     //yet talked about Observables. https://indepth.dev/posts/1287/rxjs-heads-up-topromise-is-being-deprecated
 
     let response = this.http.get(this.expressBaseUrl + endpoint).toPromise();
-    return response;
-    
-    // return Promise.resolve(req);
+    return Promise.resolve(response);
   }
 
   aboutMe():Promise<ProfileData> {
@@ -45,7 +43,17 @@ export class SpotifyService {
     //Make sure you're encoding the resource with encodeURIComponent().
     //Depending on the category (artist, track, album), return an array of that type of data.
     //JavaScript's "map" function might be useful for this, but there are other ways of building the array.
-    return null;
+    return this.sendRequestToExpress('/search/' + category + '/' + encodeURIComponent(resource)).then((data) => {
+      let key = category + "s";
+      if (category.localeCompare('artist') === 0) {
+        return data[key].items.map(x => new ArtistData(x));
+      }
+      else if (category.localeCompare('album') === 0) {
+        return data[key].items.map(x => new AlbumData(x));
+      }
+      // else track
+      return data[key].items.map(x => new TrackData(x));
+    });
   }
 
   getArtist(artistId:string):Promise<ArtistData> {
