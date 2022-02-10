@@ -22,12 +22,17 @@ export class SpotifyService {
     //Note: toPromise() is a deprecated function that will be removed in the future.
     //It's possible to do the assignment using lastValueFrom, but we recommend using toPromise() for now as we haven't
     //yet talked about Observables. https://indepth.dev/posts/1287/rxjs-heads-up-topromise-is-being-deprecated
-    return Promise.resolve();
+    let req = this.http.get(this.expressBaseUrl + endpoint).toPromise();
+    return Promise.resolve(req);
   }
 
   aboutMe():Promise<ProfileData> {
     //This line is sending a request to express, which returns a promise with some data. We're then parsing the data 
     return this.sendRequestToExpress('/me').then((data) => {
+      // to ask the Express webserver to make an API request to Spotify at the endpoint passed in. 
+      // The endpoints should then return the appropriate data type for each API call. 
+      // You will be able to test your function by building out the pages in the assignment.
+
       return new ProfileData(data);
     });
   }
