@@ -43,3 +43,8 @@ Thumbs.db
 
 webserver/tokens.json
 webserver/client_secret.json
+
+client/package.json
+client/package-lock.json
+webserver/package.json
+webserver/package-lock.json

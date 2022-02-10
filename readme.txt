@@ -1,5 +1,7 @@
---Readme document for *author(s)*, *email(s)*, *UCI id(s)*--
+--Readme document for
 Aliya Valieva, avalieva@uci.edu, 23792244
+Abner Espinoza, abnere@uci.edu, 85769794
+--
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
