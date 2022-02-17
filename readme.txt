@@ -15,7 +15,8 @@ Abner Espinoza, abnere@uci.edu, 85769794
 
 
 2. How long, in hours, did it take you to complete this assignment?
-This took us about 1 and half weeks to complete everything including the bonus feature of moving our Express webserver to a publicly visible URL rather than running on localhost. We implemented this part by creating a Heroku instance. 
+This took us about 1 and half weeks to complete everything including the bonus feature of moving our Express webserver to a publicly visible URL 
+rather than running on localhost. We implemented this part by creating a Heroku instance. 
 
 
 
