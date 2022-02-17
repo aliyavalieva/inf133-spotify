@@ -24,7 +24,9 @@ export class SearchComponent implements OnInit {
   }
 
   search() {
-    //TODO: call search function in spotifyService and parse response 
+    // both calls are always made when search() is called
+    // without the second call, tracks would bind to the data meant for artist/album causing the app to break
+    // the time spent making the second call is minimal and there is no degredation in performance
     this.spotifyService.searchFor(this.searchCategory, this.searchString).then((response) => {
       this.resources = response;
     });

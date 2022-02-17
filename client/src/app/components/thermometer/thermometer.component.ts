@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./thermometer.component.css']
 })
 export class ThermometerComponent implements OnInit {
-  //TODO: define Input fields and bind them to the template.
   @Input() name:string;
   @Input() percent:string;
   @Input() color:string;
