@@ -17,7 +17,7 @@
 		</p>
 		<p>
 			<!--link to track page on spotify, display track name-->
-			<a class="btn btn-light" role="button" target="_blank" href = "track/{{track.id}}" >Open {{track.name}} on Spotify</a>
+			<a class="btn btn-light" role="button" target="_blank" [href]="track.url" >Open {{track.name}} on Spotify</a>
 		</p>
 	</div>
 	<div *ngIf="audioFeatures" class="col-6">
