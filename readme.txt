@@ -15,29 +15,25 @@ Abner Espinoza, abnere@uci.edu, 85769794
 
 
 2. How long, in hours, did it take you to complete this assignment?
-This took us about 1 and half weeks to complete everything including the bonus feature of moving our Express webserver to a publicly visible URL 
-rather than running on localhost. We implemented this part by creating a Heroku instance. 
-
+- This assignment took us around 1.5 weeks to complete, including moving the webserver to a publicly visible URL.
 
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
-
-- https://www.typescriptlang.org/docs/handbook/intro.html
-- https://nodejs.dev/learn/making-http-requests-with-nodejs
 - https://developer.spotify.com/documentation/web-api/reference/#/
-- https://angular.io/api/common/NgForOf
-- https://startupbyte.com/articles/angular-bootstrap-bootstrap-carousel-in-angular-1/ebfe730d-f09d-42d1-a3a5-89d57eea7add
-- https://angular.io/cli
-
+- https://getbootstrap.com/docs/5.0/components/carousel/
+- https://getbootstrap.com/docs/5.0/components/progress/
+- https://angular.io/api/common#directives
+- https://github.com/twbs/bootstrap/issues/16680
 - https://devcenter.heroku.com/articles/deploying-nodejs
 
+
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-We together worked as a group in collaboration on the whole project.
+- We only consulted with each other as part of this assignment, given that we're a group.
 
 
 5. Did you add a bonus feature to your submission? If so, what is it and how should we see it?
+- Yes, we moved our Express webserver to a publicly visible URL through Heroku. You can view it here: [URL]
 
-Yes, we moved our  Express webserver to a publicly visible URL by creating a Heroku instance.
 
 6. Is there anything special we need to know in order to run your code?
-Nothing at this point.
+- Nope!
