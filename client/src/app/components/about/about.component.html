@@ -1,9 +1,9 @@
 <!--define click callback to load about me information-->
 <button (click)="onClickAboutMe()" class="btn btn-light">Load info about me</button>
-<h3>Logged in user: {{name}}</h3>
+<h3 *ngIf="name != null">Logged in user: {{name}}</h3>
 <!--bind img src's to profile_pic-->
-<img [src]="profile_pic">
+<img *ngIf="name != null" [src]="profile_pic">
 <p>
 	<!--bind link's href to profile_link-->
-	<a [href]="profile_link" class="btn btn-light" target="_blank">Open profile on Spotify</a>	
+	<a *ngIf="name != null" [href]="profile_link" class="btn btn-light" target="_blank">Open profile on Spotify</a>	 
 </p>
