@@ -15,7 +15,7 @@ Abner Espinoza, abnere@uci.edu, 85769794
 
 
 2. How long, in hours, did it take you to complete this assignment?
-- This assignment took us around 1.5 weeks to complete, including moving the webserver to a publicly visible URL.
+- This assignment took us around 20 hours to complete.
 
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
