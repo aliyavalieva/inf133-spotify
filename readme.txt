@@ -25,6 +25,7 @@ Abner Espinoza, abnere@uci.edu, 85769794
 - https://angular.io/api/common#directives
 - https://github.com/twbs/bootstrap/issues/16680
 - https://devcenter.heroku.com/articles/deploying-nodejs
+- https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
 
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
@@ -32,7 +33,7 @@ Abner Espinoza, abnere@uci.edu, 85769794
 
 
 5. Did you add a bonus feature to your submission? If so, what is it and how should we see it?
-- Yes, we moved our Express webserver to a publicly visible URL through Heroku. You can view it here: [URL]
+- Nope!
 
 
 6. Is there anything special we need to know in order to run your code?
